@@ -3,6 +3,12 @@ repeat
     wait()
 until game:IsLoaded()
 
+--whitelist
+local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+local whitelisthwid = loadstring(game:HttpGet("https://pastebin.com/raw/4Yzx6xK7"))()
+
+if hwid == whitelisthwid then
+
 --Stops script if on a different game
 if game.PlaceId ~= 8737602449 and game.PlaceId ~= 8943844393 then
     return
@@ -1055,4 +1061,5 @@ while task.wait(getgenv().settings.serverHopDelay * 60) do
     if not hopTimer then
         hopSet()
     end
+end
 end
